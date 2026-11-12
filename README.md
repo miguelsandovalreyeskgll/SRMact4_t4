@@ -1,7 +1,7 @@
 # SRMact4_t4 — API REST de materias con Spring Security y JWT
 
 **Actividad 4 — Programación Web**  
-**Estudiante:** Sandoval Reyes Miguel  
+**Estudiante:** Sandoval Reyes Miguel.  
 **Tecnología principal:** Java 17, Spring Boot y MySQL  
 **Repositorio:** [miguelsandovalreyeskgll/SRMact4_t4](https://github.com/miguelsandovalreyeskgll/SRMact4_t4)
 
