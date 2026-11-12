@@ -1,0 +1,26 @@
+meta {
+  name: Validacion
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://167.99.15.140:8091/api/materias
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "nombre": "",
+    "categoria": "Web"
+  }
+}

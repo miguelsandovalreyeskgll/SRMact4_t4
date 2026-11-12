@@ -1,0 +1,26 @@
+meta {
+  name: Crear_materia
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://167.99.15.140:8091/api/materias
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbHVtbm9AZXhhbXBsZS5jb20iLCJleHAiOjE3OTQ1MjY4NzcsImlhdCI6MTc5NDQ0MDQ3N30.3T1kIqQYRHCirFLhtsc3S7SaDeJJSAtCG507mbYnEyU
+}
+
+body:json {
+  {
+    "nombre": "Programacion Web",
+    "categoria": "Web"
+  }
+}

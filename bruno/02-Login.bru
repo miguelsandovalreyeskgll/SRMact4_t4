@@ -1,0 +1,26 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://167.99.15.140:8091/api/auth/login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "correo": "alumno@example.com",
+    "contrasena": "Alumno1234"
+  }
+}
+
+script:post-response {
+  bru.setVar("token", res.getBody().token);
+}

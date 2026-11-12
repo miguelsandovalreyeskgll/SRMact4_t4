@@ -1,0 +1,16 @@
+meta {
+  name: Listar_sin_token
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://167.99.15.140:8091/api/materias?pagina=0&tamanio=10
+  body: none
+  auth: none
+}
+
+params:query {
+  pagina: 0
+  tamanio: 10
+}

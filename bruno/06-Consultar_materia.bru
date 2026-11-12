@@ -1,0 +1,15 @@
+meta {
+  name: Consultar_materia
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://167.99.15.140:8091/api/materias/2
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

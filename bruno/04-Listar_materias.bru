@@ -1,0 +1,20 @@
+meta {
+  name: Listar_materias
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://167.99.15.140:8091/api/materias?pagina=0&tamanio=10
+  body: none
+  auth: bearer
+}
+
+params:query {
+  pagina: 0
+  tamanio: 10
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbHVtbm9AZXhhbXBsZS5jb20iLCJleHAiOjE3OTQ1MjY4NzcsImlhdCI6MTc5NDQ0MDQ3N30.3T1kIqQYRHCirFLhtsc3S7SaDeJJSAtCG507mbYnEyU
+}

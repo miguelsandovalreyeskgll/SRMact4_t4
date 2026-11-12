@@ -1,0 +1,26 @@
+meta {
+  name: Actualizar_materia
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://167.99.15.140:8091/api/materias/2
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "nombre": "Programacion Web II",
+    "categoria": "Web"
+  }
+}
